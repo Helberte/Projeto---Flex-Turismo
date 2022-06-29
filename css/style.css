@@ -50,14 +50,17 @@
 
 /* sessão flex-turismo */
 
-.container-flex-turismo{
+.container-flex-turismo, .container{
   display: flex;
   max-width: 80%;
-  margin: auto;
+  margin: auto;  
+}
+
+.container-flex-turismo{
   height: 80vh;
 }
 
-.container-flex-turismo .cards{
+.container .cards{
   flex: 1;
 }
 
@@ -99,4 +102,187 @@
 
 .container-flex-turismo .card-imagem-flex-turismo{
   align-self: center;
+}
+
+
+/* sessão quem somos */
+
+.container-quem-somos .cards img{
+  width: 100%;
+}
+
+.container-quem-somos{
+  height: 500px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.container-quem-somos .card-quem-somos{
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-quem-somos .card-quem-somos .quem-somos{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.container-quem-somos .card-quem-somos .quem-somos .divisor{
+  flex-basis: 5px;
+  background-color: rgb(21, 44, 92);
+}
+
+.container-quem-somos .card-quem-somos .quem-somos .letras-quem-somos{
+  color: rgb(15, 34, 73);
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-left: 8px;
+}
+
+.container-quem-somos .card-quem-somos .quem-somos .letras-quem-somos h2{
+  font-weight: 550;
+}
+
+.container-quem-somos .card-quem-somos p{
+  margin-bottom: 35px;
+}
+
+/* Sessão servicos */
+
+
+.servicos{
+  height: 600px;
+  background-color: rgb(15, 34, 73);
+  display: flex;
+  flex-direction: column;
+}
+
+.servicos h2{
+  width: 80%;
+  margin: auto;
+  padding-top: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.servicos .container{
+  width: 80%;
+  justify-content: space-between;
+}
+
+.servicos .container .div-servicos{
+  text-align: center;
+  width: 20%;
+  padding: 35px 20px;
+  border-radius: 15px;
+
+  transition: all .3s ease;
+}
+.servicos .container .div-servicos:hover{
+  background-color: rgb(27, 54, 109);
+}
+.servicos .container .div-servicos img{
+  width: 80%;
+}
+.servicos .container .div-servicos p{
+  color: white;
+  font-size: 20px;
+  margin: 35px 0;
+}
+
+.servicos .container .div-servicos button{
+  width: 100%;
+  height: 50px;
+  border-radius: 60px;
+  font-size: 15px;
+  border: none;
+}
+
+/* Sessão planos */
+
+
+.planos{
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.planos h2{
+  width: 80%;
+  margin: auto;
+
+  padding-top: 95px;
+  color: rgb(15, 34, 73);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.planos .container{
+  width: 80%;
+  height: 500px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.planos .container .cards-planos{
+  border: solid 4px rgb(23, 53, 112);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 35px;
+  justify-content: space-between;
+}
+
+.planos .container .cards-planos-1{
+  height: 60%;
+}
+
+.planos .container .cards-planos-2{
+  height: 80%;
+}
+
+.planos .container .cards-planos-3{
+  height: 100%;
+}
+
+.planos .container .cards-planos h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.planos .container .cards-planos .divisor{
+  flex-basis: 3px;
+  background-color:rgb(23, 53, 112);
+}
+
+.planos .container .cards-planos ul li{
+  list-style: square;
+  margin: 10px;
+}
+
+.planos .container .cards-planos ul{
+  flex: 4;
+  margin-top: 25px;
+}
+.planos .container .cards-planos button{
+  height: 45px;
+  color: white;
+  background-color: rgb(15, 34, 73);
+  border-radius: 60px;
+  font-size: 18px;
+  border: none;
+
+  transition: all .3s ease;
+}
+
+.planos .container .cards-planos button:hover{
+  background-color: transparent;
+  color: rgb(15, 34, 73);
+  border: solid 3px rgb(15, 34, 73);
 }
