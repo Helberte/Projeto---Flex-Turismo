@@ -7,8 +7,7 @@
   text-decoration: none;
   list-style: none;
 
-  font-family: 'Roboto', sans-serif;
- 
+  font-family: 'Roboto', sans-serif; 
 }
 
 .header-principal{
@@ -80,12 +79,13 @@
 }
 
 .container-flex-turismo .card-flex-turismo .centraliza button{
-  width: 140px;
+  width: 200px;
+  height: 40px;
   padding: 5px 15px;
   color: white;
   background-color: rgb(15, 34, 73);
   border-radius: 55px;
-  font-size: 15px;
+  font-size: 18px;
 
   transition: all .3s ease;
 }
@@ -103,7 +103,6 @@
 .container-flex-turismo .card-imagem-flex-turismo{
   align-self: center;
 }
-
 
 /* sessão quem somos */
 
@@ -149,7 +148,6 @@
 }
 
 /* Sessão servicos */
-
 
 .servicos{
   height: 600px;
@@ -201,7 +199,6 @@
 }
 
 /* Sessão planos */
-
 
 .planos{
   height: 700px;
@@ -285,4 +282,21 @@
   background-color: transparent;
   color: rgb(15, 34, 73);
   border: solid 3px rgb(15, 34, 73);
+}
+
+/* Sessão rodapé */
+
+.rodape{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(15, 34, 73);
+  color: white;
+  height: 100px;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.rodape p{
+  margin-top: 30px;
+  font-size: 15px;
 }

@@ -21,14 +21,14 @@
   <header class="header-principal">
     <h3 class="header-title">FlexTurismos</h3>
     <ul>
-      <a class="link-menu" href="#"><li class="itens-menu">quem somos</li></a>
-      <a class="link-menu" href="#"><li class="itens-menu">serviços</li></a>
-      <a class="link-menu" href="#"><li class="itens-menu">planos</li></a>
+      <a class="link-menu" href="#container-quem-somos"><li class="itens-menu">quem somos</li></a>
+      <a class="link-menu" href="#servicos"><li class="itens-menu">serviços</li></a>
+      <a class="link-menu" href="#planos"><li class="itens-menu">planos</li></a>
     </ul>
   </header>
 
   <!-- Sessão flex turismo -->
-  <div class="container container-flex-turismo">
+  <div id="flex-turismo" class="container container-flex-turismo">
 
     <div class="cards card-flex-turismo">
       <div class="centraliza">
@@ -39,7 +39,6 @@
       </div>      
     </div>
 
-
     <div class="cards card-imagem-flex-turismo">
       <img src="../imagens/0-main.png" alt="Imagem ilustrativa">
     </div>        
@@ -47,7 +46,7 @@
 
 
    <!-- Sessão Quem somos -->
-  <div class="container container-quem-somos">
+  <div id="container-quem-somos" class="container container-quem-somos">
 
     <div class="cards card-imagem-quem-somos">
       <img src="../imagens/1-quem-somos.png" alt="Imagem ilustrativa, quem somos">
@@ -65,9 +64,9 @@
     </div>    
   </div>
 
-  <!-- sessão serviços -->
 
-  <section class="servicos">
+  <!-- sessão serviços -->
+  <section id="servicos" class="servicos">
     <h2>Serviços</h2>
 
     <div class="container">    
@@ -91,9 +90,9 @@
     </div>
   </section>
 
-  <!-- Sessão Planos -->
 
-  <div class="planos">
+  <!-- Sessão Planos -->
+  <div id="planos" class="planos">
     <h2>Planos</h2>
 
     <div class="container">
@@ -138,7 +137,12 @@
     </div>    
   </div>
 
-
+  
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p> &copy; 2022 CSS Flexbox </p>
+    <p>Desenvolvido por Helberte Costa</p>
+  </footer>
 
 </body>
 </html>
