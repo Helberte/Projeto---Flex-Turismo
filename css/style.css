@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+.header-principal{
+  display: flex;
+  min-height: 95px;
+  background-color: rgb(17, 41, 89);
+ 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px 0 150px;
+}
+
+.header-title, .itens-menu{
+  color: white;
+}
+
+.header-title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.header-principal ul{
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 300px;
+  text-transform: capitalize;
+}
+
+.header-principal ul .link-menu{
+  text-align: center;
+}
+.header-principal ul .link-menu .itens-menu{
+  transition: font-weight .2s ease;
+}
+
+.header-principal ul .link-menu .itens-menu:hover{
+  font-weight: 500;
+}
+
+/* sessão flex-turismo */
+
+.container-flex-turismo{
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  height: 80vh;
+}
+
+.container-flex-turismo .cards{
+  flex: 1;
+}
+
+.container-flex-turismo .card-flex-turismo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-flex-turismo .card-flex-turismo .centraliza h1{
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(15, 34, 73);
+  margin-bottom: 15px;
+}
+.container-flex-turismo .card-flex-turismo .centraliza p{
+  margin-bottom: 55px;
+}
+
+.container-flex-turismo .card-flex-turismo .centraliza button{
+  width: 140px;
+  padding: 5px 15px;
+  color: white;
+  background-color: rgb(15, 34, 73);
+  border-radius: 55px;
+  font-size: 15px;
+
+  transition: all .3s ease;
+}
+
+.container-flex-turismo .card-flex-turismo .centraliza button:hover{
+  color: rgb(15, 34, 73);
+  background-color: transparent;
+  border: solid 2px rgb(15, 34, 73);
+}
+
+.container-flex-turismo .cards img{
+  width: 100%;
+}
+
+.container-flex-turismo .card-imagem-flex-turismo{
+  align-self: center;
+}
