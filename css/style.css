@@ -180,13 +180,13 @@ html{
 
 .servicos .container{
   width: 80%;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
 }
 
 .servicos .container .div-servicos{
   text-align: center;
-  width: 16%;
+  width: 20%;
   padding: 35px 20px;
   border-radius: 15px;
 
@@ -196,7 +196,7 @@ html{
   background-color: rgb(27, 54, 109);
 }
 .servicos .container .div-servicos img{
-  width: 80%;
+  width: 70%;
 }
 .servicos .container .div-servicos p{
   color: white;
@@ -316,3 +316,61 @@ html{
   margin-top: 30px;
   font-size: 15px;
 }
+
+
+
+/* responsivo */
+
+@media(max-width: 860px){
+  .container-flex-turismo, .container-quem-somos{
+    width: 100%;
+  }
+}
+
+@media(max-width: 800px){
+  .container-flex-turismo .card-flex-turismo,
+  .container-quem-somos .card-imagem-quem-somos{
+    justify-content: flex-start;
+  }
+
+  .container-flex-turismo .cards .centraliza{
+    margin-left: 40px;
+  }
+}
+
+@media(max-width: 760px){
+  .container-flex-turismo{
+    flex-direction: column-reverse;    
+    align-items: center;
+    padding-top: 13%;
+  }
+  .container-flex-turismo .cards .centraliza{
+    margin: 0;
+  }
+  .container-flex-turismo .card-imagem-flex-turismo{
+    max-width: 70%;
+  }
+  .container-quem-somos{
+    flex-direction: column;  
+    height: 100vh;
+  }
+  .container-quem-somos .cards .quem-somos{
+    justify-content: center;
+  }
+  .container-flex-turismo .card-flex-turismo{
+    justify-content: center;
+  }
+}
+@media(max-width: 650px){
+  .container-flex-turismo .card-imagem-flex-turismo img{
+    width: 70%;
+    
+  }
+  .container-flex-turismo .card-imagem-flex-turismo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
