@@ -315,6 +315,7 @@ html{
 .rodape p{
   margin-top: 30px;
   font-size: 15px;
+  text-align: center;
 }
 
 
@@ -481,5 +482,15 @@ html{
 @media(max-width: 460px){
   .planos .container .cards-planos{
     min-width: 70%;
+  }
+}
+@media(max-width: 440px){
+  .planos .container .cards-planos{
+    padding: 35px;
+  }
+}
+@media(max-width: 400px){
+  .planos .container .cards-planos{
+    padding: 30px;
   }
 }
