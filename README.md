@@ -6,7 +6,9 @@
 
 📌 *Alguns dos atributos estudados aqui são:*
 
-- Item 1
+- Flexbox
+- keyframes
+- transform
 
 
 
