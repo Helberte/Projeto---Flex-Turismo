@@ -16,7 +16,8 @@ html{
 
 .header-principal{
   display: flex;
-  min-height: 95px;
+  min-height: 90px;
+  height: 12vh;
   background-color: rgb(17, 41, 89);
  
   align-items: center;
@@ -27,9 +28,15 @@ html{
   box-sizing: border-box;
   width: 100%;
 }
+.bt-menu{
+  color: #fff;
+  font-size: 40px;
+  display: none;
+}
 
 .header-title, .itens-menu{
   color: white;
+  letter-spacing: 2px;
 }
 
 .header-title{
@@ -46,13 +53,14 @@ html{
 
 .header-principal ul .link-menu{
   text-align: center;
+  margin-right: 15px;
 }
 .header-principal ul .link-menu .itens-menu{
-  transition: font-weight .2s ease;
+  transition: opacity .2s ease;
 }
 
 .header-principal ul .link-menu .itens-menu:hover{
-  font-weight: 500;
+  opacity: .5;
 }
 
 /* sessão flex-turismo */
@@ -343,6 +351,7 @@ html{
   .header-principal{
     padding: 0 100px;
   }
+
 }
 @media(max-width: 800px){
   .container-flex-turismo .card-flex-turismo,
@@ -470,12 +479,34 @@ html{
     align-items: center;
   }
   .header-principal{
-    padding: 0 10px;
+    padding: 0 30px;
   }
+  body{
+    overflow-x: hidden;
+  }
+  .header-principal .list{
+    position: absolute;
+    right: 0;
+    top: 9vh;
+    height: 91vh;
+    background-color: rgb(17, 41, 89);
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(100%);
+
+    transition: all .3s ease-out;
+  }
+  .header-principal ul a{
+    opacity: 0;
+  }
+  .header-principal .bt-menu{
+    display: block;
+  }
+
+  /* menu */
 }
 @media(max-width: 580px){
-  .planos .container .cards-planos{
-    
+  .planos .container .cards-planos{    
     width: 70%;
   }
 }
@@ -492,5 +523,25 @@ html{
 @media(max-width: 400px){
   .planos .container .cards-planos{
     padding: 30px;
+  }
+}
+
+.list.active{
+  transform: translateX(0);
+}
+.list.desactive{
+  transform: translateX(100%);
+}
+
+/*Animação CSS*/
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
