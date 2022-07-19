@@ -28,10 +28,21 @@ html{
   box-sizing: border-box;
   width: 100%;
 }
-.bt-menu{
-  color: #fff;
-  font-size: 40px;
+
+.header-principal .new-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22px;
+
   display: none;
+}
+.header-principal .new-menu .item{
+  height: 3px;
+  width: 30px;
+  background-color: white;
+
+  transition: all .3s ease;
 }
 
 .header-title, .itens-menu{
@@ -467,7 +478,7 @@ html{
     margin: 0;
   }
 }
-@media(max-width: 650px){
+@media(max-width: 670px){
   .container-flex-turismo .card-imagem-flex-turismo img{
     width: 70%;
     
@@ -500,11 +511,10 @@ html{
   .header-principal ul a{
     opacity: 0;
   }
-  .header-principal .bt-menu{
-    display: block;
-  }
 
-  /* menu */
+  .header-principal .new-menu{
+    display: flex;
+  }
 }
 @media(max-width: 580px){
   .planos .container .cards-planos{    
@@ -545,4 +555,22 @@ html{
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* ANIMAÇÃO MENU AMBURGUER */
+
+.header-principal .new-menu .item-1.animation{
+  position: relative;
+  top: 9.4px;
+  transform: rotate(-40deg);
+  width: 38px;
+}
+.header-principal .new-menu .item-2.animation{
+  opacity: 0;
+}
+.header-principal .new-menu .item-3.animation{
+  position: relative;
+  bottom: 9.5px;
+  transform: rotate(40deg);
+  width: 38px;
 }
