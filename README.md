@@ -10,6 +10,8 @@
 - keyframes
 - transform
 
+[![](https://img.shields.io/badge/FlexTurismo-VejaNoSeuNavegador-orange)](https://helberte.github.io/Projeto---Flex-Turismo/html/)
+
 ---
 #### Como testar este projeto na sua máquina?
 - Basta clonar ou fazer download do projeto e clicar duas vezes sobre o arquivo index.html
